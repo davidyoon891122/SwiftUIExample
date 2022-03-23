@@ -9,13 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView {
-            VStack{
-                FormView()
-            }
-            .navigationTitle("SwiftUI")
+        NavigationView{
+            BodyView()
+                .navigationTitle("회원가입")
         }
-       
+        
     }
 }
 
@@ -25,58 +23,24 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-
-struct HeaderView: View {
-    var body: some View {
-        HStack {
-            Button(action: {
-                print("Tapped")
-            }, label: {
-                Image(systemName: "chevron.backward")
-            })
-            Spacer()
-            Text("Swift UI Test!")
-            Spacer()
-            Button(action: {
-                print("tapped option button!")
-            }, label: {
-                Image(systemName: "gearshape")
-            })
-        }.frame(maxWidth: .infinity, maxHeight: 50.0).padding([.leading, .trailing])
-    }
-}
-
-
 struct BodyView: View {
-    let data = Array(1...1000).map { "목록: \($0)"}
-    let columns = [
-        GridItem(.adaptive(minimum: 150))
-    ]
-    var body: some View {
-        ScrollView {
-            LazyVGrid(columns: columns, spacing: 20) {
-                ForEach(data, id: \.self) { i in
-                    Capsule()
-                        .fill(Color.blue)
-                        .frame(height: 50.0)
-                    Text(i)
-                        .foregroundColor(.secondary)
-                }
-            }
-            .padding(.horizontal)
-        }
-    }
-}
-
-struct FormView: View {
-    @State var touchedCount = 0
-    
+    @State var name = ""
+    @State var bornIn = ""
     var body: some View {
         Form {
-            Text("버튼을 클릭 한 횟수 \(touchedCount)")
-            Button("Button") {
-                touchedCount += 1
+            Section {
+                TextField("이름을 입력해주세요", text: $name)
+                    .keyboardType(.default)
             }
+            Section(header: Text("생년월일")) {
+                Picker("출생년도", selection: $bornIn) {
+                    ForEach(1900 ..< 2019) {
+                        Text("\(String($0))년생")
+                    }
+                }
+            }
+            
         }
+        
     }
 }
