@@ -11,6 +11,8 @@
 		AD9B6B0C27E81BD1004912D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9B6B0B27E81BD1004912D8 /* ContentView.swift */; };
 		AD9B6B0E27E81BD3004912D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD9B6B0D27E81BD3004912D8 /* Assets.xcassets */; };
 		AD9B6B1127E81BD3004912D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD9B6B1027E81BD3004912D8 /* Preview Assets.xcassets */; };
+		ADBC828E27ED60B800BC8A38 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBC828D27ED60B800BC8A38 /* PickerView.swift */; };
+		ADBC829027ED611300BC8A38 /* StackTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBC828F27ED611300BC8A38 /* StackTestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		AD9B6B0B27E81BD1004912D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AD9B6B0D27E81BD3004912D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD9B6B1027E81BD3004912D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ADBC828D27ED60B800BC8A38 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		ADBC828F27ED611300BC8A38 /* StackTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				AD9B6B0B27E81BD1004912D8 /* ContentView.swift */,
 				AD9B6B0D27E81BD3004912D8 /* Assets.xcassets */,
 				AD9B6B0F27E81BD3004912D8 /* Preview Content */,
+				ADBC828D27ED60B800BC8A38 /* PickerView.swift */,
+				ADBC828F27ED611300BC8A38 /* StackTestView.swift */,
 			);
 			path = SwiftUIPractice;
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			files = (
 				AD9B6B0C27E81BD1004912D8 /* ContentView.swift in Sources */,
 				AD9B6B0A27E81BD1004912D8 /* SwiftUIPracticeApp.swift in Sources */,
+				ADBC828E27ED60B800BC8A38 /* PickerView.swift in Sources */,
+				ADBC829027ED611300BC8A38 /* StackTestView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
